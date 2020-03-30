@@ -42,4 +42,42 @@ sudo xcode-select -s /Applications/Xcode.app
 
 ### Location
 - ref : expo/docs/location
+
 ```expo install expo-location```
+
+### Weater API
+from https://openweathermap.org/api
+by City id : https://openweathermap.org/current#cityid
+current location : ip-api.com
+
+```
+npm add axios
+npm add prop-types
+```
+
+### expo icon
+```js
+import { MaterialCommunityIcons } from "@expo/vector-icons";
+
+<MaterialCommunityIcons
+          size={96}
+          name={weatherOptions[condition].iconName}
+          color="white"
+        />
+
+```
+- expo.github.io/vector-icons
+
+### Linear Gradient
+```js
+import { LinearGradient } from "expo-linear-gradient";
+<LinearGradient colors={weatherOptions[condition].gradient} style={styles.container}>
+    //contents
+</LinearGradient>
+
+```
+ref : https://uigradients.com/
+
+
+### ref
+이미지 작업 : https://www.filestack.com/products/transformations/
